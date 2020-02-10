@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todolist deluxe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>todolist deluxe</h1>
+    </header>
+    <div class="main">
+        <div class="addMenu">
+            <div class="add">
+                <form>
+                    <label>SKAPA NY LISTA</label><input type="text" id="listName" placeholder="namn">
+                    <input type="button" value="Skapa" id="create">
+                    <label>LÄGG TILL TODO</label> <select name="" id="todoList">
+                        <option value="" disabled selected>tom</option>
+                        </select>
+                    <input type="text" id="row" placeholder="task">
+                    <input type="date" name="date" id="date" value="">
+                    <select name="" id="category">
+                        <option value="inköp">Inköp</option>
+                        <option value="kontakta">Kontakta</option>
+                        <option value="hushåll">Hushåll</option>
+                    </select>
+                    <input type="button" value="Lägg till" id="save">
+                </form>
+            </div>
+        </div>
+        <div class="rightArea">
+            <div class="list" style="display:none;" id="default">
+                <h3>Default lista</h3>
+                <label>Filter </label><input type="text" id="filter">
+                <label>Alla </label><input type="radio" name="cates" id="" value="alla" checked>
+                <label>Inköp </label><input type="radio" name="cates" id="" value="inköp">
+                <label>Kontakta </label><input type="radio" name="cates" id="" value="kontakta">
+                <label>Hushåll </label><input type="radio" name="cates" id="" value="hushåll">
+                <ul class="inList" id="inList_default">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/06f93047a6.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/todo.js" async defer></script>
+</body>
+
+</html>

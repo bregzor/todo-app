@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren|Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../media/ventana.png");
+  background-repeat: repeat-y;
+  background-position-y: center;
+  background-color: #6da894;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+header {
+  height: 80px;
+  background: #ced7da;
+  opacity: 0.5;
+}
+
+header h1 {
+  color: #7e7e7e;
+  text-align: center;
+  padding: 20px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.main .addMenu {
+  width: 500px;
+  height: 100vh;
+  background: white;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+.main .addMenu .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+}
+
+.main .addMenu .add form {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+.main .addMenu .add form label {
+  color: #9c9c9c;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.main .addMenu .add form input,
+.main .addMenu .add form select {
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  width: 300px;
+  background: #e4e4e4;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.main .addMenu .add form input:hover,
+.main .addMenu .add form select:hover {
+  background: #d8d8d8;
+}
+
+.main .addMenu .add form input[type="button"] {
+  margin-bottom: 50px;
+}
+
+.main .rightArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.main .rightArea img {
+  position: relative;
+  left: 100px;
+}
+
+.main .rightArea .list {
+  min-width: 480px;
+  background: #536c73;
+  position: relative;
+  left: 120px;
+  top: 100px;
+  padding: 25px;
+  border-radius: 15px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 1px 0px 9px 4px #dfdfdf;
+          box-shadow: 1px 0px 9px 4px #dfdfdf;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.main .rightArea .list:hover {
+  background: #588863;
+  opacity: 1;
+}
+
+.main .rightArea .list #filter {
+  margin-right: 30px;
+  outline: none;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.main .rightArea .list h3 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.main .rightArea .inList {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'McLaren', sans-serif;
+  padding-top: 50px;
+}
+
+.main .rightArea .inList #todoHolder {
+  width: 180px;
+}
+
+.main .rightArea .inList #cateHolder {
+  width: 100px;
+}
+
+.main .rightArea .inList li {
+  list-style-type: none;
+}
+
+.main .rightArea #inputRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.main .rightArea #inputRow div {
+  margin-right: 30px;
+}
+
+.main .rightArea #inputRow button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
+
+.fadeIn {
+  -webkit-animation: fade;
+          animation: fade;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
